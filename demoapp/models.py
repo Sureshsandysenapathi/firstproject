@@ -11,6 +11,8 @@ class Contact(models.Model):
     is_resolved=models.BooleanField(default=False)
     
 
+    
+    
     def __str__(self):
         return self.name
     
@@ -21,8 +23,11 @@ class Blog(models.Model):
     description=models.TextField()
     author=models.CharField(max_length=100)
     created_at=models.DateTimeField(default=datetime.now)
+    
+    
+    
     def __str__(self):
         return self.title
-
+#chage the code
 
 # Create your models here.
